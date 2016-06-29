@@ -1,0 +1,21 @@
+{
+  "schedule": "R1/2014-09-25T17:22:00Z/PT2M",
+  "name": "dockerjob",
+  "container": {
+    "type": "DOCKER",
+    "image": "seoy/bwa",
+    "network": "BRIDGE",
+    "volumes": [
+      {
+        "containerPath": "/tmp/",
+        "hostPath": "/opt/bwa-docker/",
+        "mode": "RW"
+      }
+    ]
+  },
+  "cpus": "0.5",
+  "mem": "512",
+  "uris": [],
+  "command": "/bwa index MT.fa"
+}
+
