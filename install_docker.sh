@@ -4,7 +4,10 @@ apt-get install -y -q apt-transport-https ca-certificates && apt-key adv --keyse
 
 mkdir -p /etc/apt/sources.list.d
 touch /etc/apt/sources.list.d/docker.list
+# ubuntu 14.04
 echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-trusty main > /etc/apt/sources.list.d/docker.list
+# ubuntu 16.04
+#echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-xenial main > /etc/apt/sources.list.d/docker.list
 apt-get update
 apt-get install -y -q docker-engine
 apt-mark hold docker-engine
