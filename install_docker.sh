@@ -7,4 +7,4 @@ touch /etc/apt/sources.list.d/docker.list
 echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-trusty main > /etc/apt/sources.list.d/docker.list
 apt-get update
 apt-get install -y -q docker-engine
-sapt-mark hold docker-engine
+apt-mark hold docker-engine
