@@ -24,6 +24,8 @@ echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-trusty main > 
 
 # ubuntu 12.04(Precise)
 #echo deb \[arch=amd64\] https://apt.dockerproject.org/repo ubuntu-precise main > /etc/apt/sources.list.d/docker.list
-apt-get update
-apt-get install -y -q docker-engine
-apt-mark hold docker-engine
+apt-get update -y
+apt-cache policy docker-engine
+
+#apt-get install -y -q docker-engine
+#apt-mark hold docker-engine
